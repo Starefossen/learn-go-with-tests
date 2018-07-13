@@ -74,12 +74,11 @@ Now it's time to refactor and introduce another construct `+=` assignment operat
 ```go
 const repeatCount = 5
 
-func Repeat(character string) string {
-    var repeated string
+func Repeat(character string) (repeated string) {
     for i := 0; i < repeatCount; i++ {
         repeated += character
     }
-    return repeated
+    return
 }
 ```
 
